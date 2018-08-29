@@ -1,6 +1,8 @@
 
 body {
     font-family: 'Open Sans Condensed', serif;
+    background-image: url('../img/bg1.jpg');
+    color:white;
 }
 
 ul {
