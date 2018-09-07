@@ -32,7 +32,8 @@ li a:hover {
     background-image: url("../img/profile2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
     height: 1080px;
     
 }
