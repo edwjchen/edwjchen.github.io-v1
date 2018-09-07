@@ -1,6 +1,6 @@
-
 body {
     font-family: 'Open Sans Condensed', serif;
+    color:black;
 }
 
 ul {
@@ -8,6 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
     background-color: #333;
 }
 
@@ -26,3 +27,14 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+.profilepic {
+    background-image: url("../img/profile2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 1080px;
+    
+}
+
