@@ -13,7 +13,6 @@ app.get('/about', function(req, res){
   res.sendFile('assets/html/about.html', { root: __dirname });
 })
 
-
 var server = http.createServer(app);
 
 server.listen(1500);
