@@ -51,15 +51,27 @@ li a:hover {
     color: white;
 }
 
-.profile_desc {
+.profile_desc_line1 {
     position: fixed;
     text-align: center;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 120%;
     top: 345px;
-    right: 100px;
+    right: 140px;
     color: white;
 }
+
+.profile_desc_line2 {
+    position: fixed;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 120%;
+    top: 365px;
+    right: 120px;
+    color: white;
+}
+
+
 
 .about_title {
     font-size: 6vw;
@@ -68,5 +80,17 @@ li a:hover {
 
 .about_text {
     font-size: 2vw;
+}
+
+.button_linkedin {
+    background-image: url("../img/linkedin.png");
+}
+
+.button_facebook {
+    background-image: url("../img/facebook.png");
+}
+
+.button_github {
+    background-image: url("../img/github.png");
 }
 
