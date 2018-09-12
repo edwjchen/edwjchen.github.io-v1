@@ -3,32 +3,9 @@ body {
     color:black;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
 .profile_pic {
+    top: -8px; 
+    left: 0px; 
     background-image: url("../img/background_small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +13,7 @@ li a:hover {
     background-position: center;
     position: relative;
     text-align: center;
-    width: 100%;
+    min-width: 100%;
     height: 1080px;
     z-index: 1;
     filter: alpha(opacity=50);
@@ -44,34 +21,50 @@ li a:hover {
 
 .profile_name {
     position: fixed;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 12vh;
-    top: 250px;
-    right: 125px;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
+    top: 200px;
+    left: 800px;
     color: white;
+    white-space: nowrap;
+   
 }
 
 .profile_desc_line1 {
     position: fixed;
-    text-align: center;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 120%;
-    top: 350px;
-    right: 140px;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    top: 310px;
+    left: 800px;
     color: white;
+    white-space: nowrap;
+    
 }
 
 .profile_desc_line2 {
     position: fixed;
-    text-align: center;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 120%;
-    top: 370px;
-    right: 120px;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    top: 330px;
+    left: 800px;
     color: white;
+    white-space: nowrap;
 }
 
+#test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
 
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
 
 .about_title {
     font-size: 6vw;
@@ -82,15 +75,31 @@ li a:hover {
     font-size: 2vw;
 }
 
-.button_linkedin {
-    background-image: url("../img/linkedin.png");
+.fa {
+    font-size: 48px;
 }
 
-.button_facebook {
-    background-image: url("../img/facebook.png");
+.fa-linkedin-square {
+   color:#4875B4;
+
+} 
+
+.fa-linkedin-square:hover {
+    color:#32517d;
+} 
+
+.fa-facebook-square {
+    color:#3B5998;
 }
 
-.button_github {
-    background-image: url("../img/github.png");
+.fa-facebook-square:hover {
+    color:#293e6a;
 }
 
+.fa-github-square {
+    color:#211F1F;
+}
+
+.fa-github-square:hover {
+    color:#4d4b4b;
+}
