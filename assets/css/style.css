@@ -25,7 +25,7 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 70px;
     top: 200px;
-    left: 800px;
+    left: 65vw;
     color: white;
     white-space: nowrap;
    
@@ -37,7 +37,7 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     top: 310px;
-    left: 800px;
+    left: 65vw;
     color: white;
     white-space: nowrap;
     
@@ -49,21 +49,9 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     top: 330px;
-    left: 800px;
+    left: 65vw;
     color: white;
     white-space: nowrap;
-}
-
-#test p {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
 }
 
 .about_title {
@@ -102,4 +90,24 @@ body {
 
 .fa-github-square:hover {
     color:#4d4b4b;
+}
+
+.fa-envelope-square {
+    color:#d44638;
+}
+
+.fa-envelope-square:hover {
+    color:#b23121;
+}
+
+#test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
