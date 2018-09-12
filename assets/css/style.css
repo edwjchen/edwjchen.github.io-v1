@@ -25,33 +25,31 @@ body {
     position: fixed;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 70px;
+    font-size: 4vw;
     top: 40vh;
     left: 65vw;
     color: white;
     vertical-align:top;
     white-space: nowrap;
-   
 }
 
 .profile_desc_line1 {
     position: fixed;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    top: 57vh;
+    font-size: 2vw;
+    top: 56vh;
     left: 65vw;
     color: white;
     vertical-align:top;
     white-space: nowrap;
-    
 }
 
 .profile_desc_line2 {
     position: fixed;
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
     top: 60vh;
     left: 65vw;
     color: white;
