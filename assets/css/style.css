@@ -45,9 +45,19 @@ li a:hover {
 .profile_name {
     position: fixed;
     font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 8vh;
+    font-size: 12vh;
     top: 250px;
-    right: 150px;
+    right: 125px;
+    color: white;
+}
+
+.profile_desc {
+    position: fixed;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 120%;
+    top: 345px;
+    right: 100px;
     color: white;
 }
 
