@@ -6,6 +6,8 @@ body {
 .profile_pic {
     top: -8px; 
     left: 0px; 
+    margin-left: -8px;
+    margin-right: -8px;
     background-image: url("../img/background_small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,9 +26,10 @@ body {
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 70px;
-    top: 200px;
+    top: 40vh;
     left: 65vw;
     color: white;
+    vertical-align:top;
     white-space: nowrap;
    
 }
@@ -36,9 +39,10 @@ body {
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
-    top: 310px;
+    top: 57vh;
     left: 65vw;
     color: white;
+    vertical-align:top;
     white-space: nowrap;
     
 }
@@ -48,9 +52,10 @@ body {
     text-align: left;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
-    top: 330px;
+    top: 60vh;
     left: 65vw;
     color: white;
+    vertical-align:top;
     white-space: nowrap;
 }
 
