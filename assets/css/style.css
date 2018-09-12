@@ -28,13 +28,45 @@ li a:hover {
     background-color: #111;
 }
 
-.profilepic {
-    background-image: url("../img/profile2.jpg");
+.profile_pic {
+    background-image: url("../img/background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
     height: 1080px;
-    
+    z-index: 1;
+    filter: alpha(opacity=50);
+}
+
+.profile_name {
+    position: fixed;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 12vh;
+    top: 250px;
+    right: 125px;
+    color: white;
+}
+
+.profile_desc {
+    position: fixed;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 120%;
+    top: 345px;
+    right: 100px;
+    color: white;
+}
+
+.about_title {
+    font-size: 6vw;
+    text-align:center;
+}
+
+.about_text {
+    font-size: 2vw;
 }
 
