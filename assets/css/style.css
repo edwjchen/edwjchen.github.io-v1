@@ -3,6 +3,9 @@ body {
     color:black;
 }
 
+.fade {
+    visibility: hidden;
+}
 .profile_pic {
     top: -8px; 
     left: 0px; 
