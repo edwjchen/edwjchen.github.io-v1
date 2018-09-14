@@ -12,7 +12,6 @@ function parallaxText() {
 	} else {
 		document.getElementById("profile_name").style.textIndent = "0px";
 		document.getElementById("profile_name").style.color = "white";
-
 	}
 
 	if (eTop > 762) {
@@ -23,7 +22,7 @@ function parallaxText() {
 		document.getElementById("profile_desc_line1").style.color = "white";
 	}
 
-	if (eTop > 738) {
+	if (eTop > 730) {
 		document.getElementById("profile_desc_line2").style.textIndent = "-9999px";
 		document.getElementById("profile_desc_line2").style.color = "transparent";
 	} else {
@@ -37,7 +36,7 @@ function fade() {
 	var i;
 	for (i = 0; i < elements.length; i++) { 
 	 	var rect = elements[i].getBoundingClientRect();
-	 	if ((rect.top) < screen.height - screen.height/4) {
+	 	if ((rect.top) <= screen.height - screen.height/4) {
 	 		$(elements[i]).css('visibility','visible').hide().fadeIn("slow");
 	 		elements[i].className = "faded";
 	 	}
