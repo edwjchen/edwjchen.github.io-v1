@@ -110,6 +110,13 @@ body {
     font-size: 5vh;
 }
 
+.project_date {
+    position: absolute;
+    right: 10%;
+    display: inline;
+    font-size: 4vh;
+}
+
 .position {
     display: inline;
     font-size: 4vh;
