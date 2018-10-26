@@ -27,7 +27,7 @@ var option3 = {
 
 var option4 = {
     strings: ["Null pointer exception? ^200", "Running gdb ^200", "Placing break statements ^200", "Null pointer found ^200", "Refactoring code ^200", "Need more coffee ^200", "Adding more code", "More bugs found"],
-    typeSpeed: 50,
+    typeSpeed: 35,
     backSpeed: 20,
     smartBackspace: true, // this is a default
     loop: true
