@@ -49,6 +49,14 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+var logo = document.getElementById("logo");
+logo.onclick = function() {
+  window.scrollTo({
+       top: 0,
+       behavior: "smooth"
+  });
+}
+
 var nav_about = document.getElementById("nav_about");
 nav_about.onclick = function() {
   var element = document.getElementById('about_title')
@@ -63,3 +71,66 @@ nav_about.onclick = function() {
        behavior: "smooth"
   });
 }
+
+var nav_projects = document.getElementById("nav_projects");
+nav_projects.onclick = function() {
+  var element = document.getElementById('project_title')
+  var offset = 45;
+  var bodyRect = document.body.getBoundingClientRect().top;
+  var elementRect = element.getBoundingClientRect().top;
+  var elementPosition = elementRect - bodyRect;
+  var offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+
+var below = document.getElementById("below");
+below.onclick = function() {
+  var element = document.getElementById('project_title')
+  var offset = 45;
+  var bodyRect = document.body.getBoundingClientRect().top;
+  var elementRect = element.getBoundingClientRect().top;
+  var elementPosition = elementRect - bodyRect;
+  var offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+
+var nav_exp = document.getElementById("nav_exp");
+nav_exp.onclick = function() {
+  var element = document.getElementById('exp_title')
+  var offset = 45;
+  var bodyRect = document.body.getBoundingClientRect().top;
+  var elementRect = element.getBoundingClientRect().top;
+  var elementPosition = elementRect - bodyRect;
+  var offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+
+var nav_contact = document.getElementById("nav_contact");
+nav_contact.onclick = function() {
+  var element = document.getElementById('contact_title')
+  var offset = 45;
+  var bodyRect = document.body.getBoundingClientRect().top;
+  var elementRect = element.getBoundingClientRect().top;
+  var elementPosition = elementRect - bodyRect;
+  var offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
+
+
+
