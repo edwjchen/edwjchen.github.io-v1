@@ -22,7 +22,7 @@ body {
     color: #f2f2f2;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     margin-top: 14px;
     margin-right: 48px;
     margin-bottom: 16px;
@@ -75,7 +75,7 @@ body {
 }
 
 .fakeMenu {
-    width: 550px;
+    width: 50vw;
     box-sizing: border-box;
     height: 25px;
     background-color: #bbb;
@@ -87,18 +87,35 @@ body {
 .fakeScreen {
     background-color: #151515;
     box-sizing: border-box;
-    height: 500px;
-    width: 550px;
+    height: 650px;
+    width: 50vw;
     margin: 0 auto;
     padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-size: 18px;
 }
 
 .text {
     color: white;
     display: inline;
 }
+
+.text2 {
+    color: white;
+    display: inline;
+}
+
+.text3 {
+    color: white;
+    display: inline;
+}
+
+.text4 {
+    color: white;
+    display: inline;
+}
+
 
 #navbar_number {
     color: #6699cc;
