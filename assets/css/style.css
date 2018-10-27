@@ -126,6 +126,8 @@ body {
     color: #999999;
 }
 
+
+
 ul {
     columns: 2;
     -webkit-columns: 2;
@@ -133,7 +135,12 @@ ul {
     list-style: none
 }
 
-#double li::before {
+ol {
+    list-style: none
+
+}
+
+li::before {
     content: "";
     border-color: transparent #6699cc;
     border-style: solid;
@@ -144,10 +151,11 @@ ul {
     left: -1em;
     top: 1em;
     position: relative;
+    font-size: 20px;
 }
 
-#double li  { 
-    width:50%;
+li  { 
+    color: #999999;
 }
 
 #project {
@@ -157,6 +165,7 @@ ul {
 
 .position {
     font-size: 22px;
+    color: #CCCCCC;
 }
 
 .company_name {
@@ -170,6 +179,11 @@ ul {
     font-size: 18px;
 }
 
+.time {
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
 .fa {
     font-size: 48px;
 }
@@ -180,7 +194,7 @@ ul {
 } 
 
 .fa-linkedin-square:hover {
-    color:#32517d;
+    color:#6f85a4;
 } 
 
 .fa-facebook-square {
@@ -188,7 +202,7 @@ ul {
 }
 
 .fa-facebook-square:hover {
-    color:#293e6a;
+    color:#758ab6;
 }
 
 .fa-github-square {
@@ -204,5 +218,5 @@ ul {
 }
 
 .fa-envelope-square:hover {
-    color:#b23121;
+    color:#dc6a5f
 }
