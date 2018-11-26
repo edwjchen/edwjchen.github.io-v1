@@ -162,6 +162,14 @@ li  {
     font-size: 24px;
 }
 
+.project-container {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+
 .project {
     margin-top: 20px;
     font-size: 22px;
@@ -223,4 +231,15 @@ li  {
 
 .fa-envelope-square:hover {
     color:#dc6a5f
+}
+
+
+.fa-github {
+    color:white;
+    font-size: 2.5vw;
+    text-decoration: none;
+}
+
+.fa-github:hover {
+    color:#6699cc;
 }
