@@ -8,7 +8,7 @@ var option = {
 }
 
 var option2 = {
-    strings: ["<u>below</u> ^300"],
+    strings: ["below ^300"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[1].style.display = "none";
@@ -17,7 +17,7 @@ var option2 = {
 }
 
 var option3 = {
-    strings: ["<br><br>$ ^200 Or contact me at ejc042@ucsd.edu ^300 <br><br>$ ^200 Error message: ^300 <br><br>$ ^200 Segmentation fault (core dumped) ^300 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200"],
+    strings: ["<br><br>$ ^200 Or contact me at"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[2].style.display = "none";
@@ -26,7 +26,25 @@ var option3 = {
 }
 
 var option4 = {
-    strings: ["Heap corruption ^200", "Running gdb ^200", "Placing break statements ^200", "Null pointer found ^200", "Refactoring code ^200", "Need more coffee ^200", "Adding more code", "More bugs found"],
+    strings: ["edward98c@gmail.com ^300"],
+    typeSpeed: 10,
+    onComplete: function () {
+      document.querySelectorAll(".typed-cursor")[3].style.display = "none";
+      var typed4 = new Typed(".text5", option5)
+    }
+}
+
+var option5 = {
+    strings: ["<br><br>$ ^200 Error message: ^300 <br><br>$ ^200 Segmentation fault (core dumped) ^300 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200"],
+    typeSpeed: 10,
+    onComplete: function () {
+      document.querySelectorAll(".typed-cursor")[4].style.display = "none";
+      var typed4 = new Typed(".text6", option6)
+    }
+}
+
+var option6 = {
+    strings: ["Heap corruption ^200", "Running gdb ^200", "Placing break statements ^200", "Null pointer found ^200", "Refactoring code ^200", "Need more coffee ^200", "Adding more code", "Doing a barrel roll", "More bugs found"],
     typeSpeed: 25,
     backSpeed: 20,
     smartBackspace: true, // this is a default
