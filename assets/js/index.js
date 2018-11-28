@@ -17,7 +17,7 @@ var option2 = {
 }
 
 var option3 = {
-    strings: ["<br><br>$ ^200 I am a software engineer ^300 <br><br>$ ^200 And a part time Pokemon Go player . . . ^300 <br><br>$ ^200 anyways ^100 <br><br>$ ^200 Check out some of my personal projects"],
+    strings: ["<br><br>$ ^200 I am a software engineer ^300 <br><br>$ ^200 And a part time Pokemon Go player . . . ^300 <br><br>$ ^200 anyways ^100 <br><br>$ ^200 Check out some of my personal "],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[2].style.display = "none";
@@ -26,7 +26,7 @@ var option3 = {
 }
 
 var option4 = {
-    strings: ["below ^300"],
+    strings: ["projects below ^300"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[3].style.display = "none";
