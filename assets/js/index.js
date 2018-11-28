@@ -1,5 +1,5 @@
 var option = {
-    strings: ["$ Hello world! My name is Edward Chen ^300 <br><br>$ ^200 I am a software engineer ^300 <br><br>$ ^200 And a part time Pokemon Go player . . . ^300 <br><br>$ ^200 anyways ^100 <br><br>$ ^200 Check out some of my personal projects"],
+    strings: ["$ Hello world! My name is"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[0].style.display = "none";
@@ -8,34 +8,34 @@ var option = {
 }
 
 var option2 = {
-    strings: ["below ^300"],
+    strings: ["Edward Chen ^300"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[1].style.display = "none";
-      var typed3 = new Typed(".text3", option3)
+      var typed2 = new Typed(".text3", option3)
     }
 }
 
 var option3 = {
-    strings: ["<br><br>$ ^200 Or contact me at"],
+    strings: ["<br><br>$ ^200 I am a software engineer ^300 <br><br>$ ^200 And a part time Pokemon Go player . . . ^300 <br><br>$ ^200 anyways ^100 <br><br>$ ^200 Check out some of my personal projects"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[2].style.display = "none";
-      var typed4 = new Typed(".text4", option4)
+      var typed2 = new Typed(".text4", option4)
     }
 }
 
 var option4 = {
-    strings: ["edward98c@gmail.com ^300"],
+    strings: ["below ^300"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[3].style.display = "none";
-      var typed4 = new Typed(".text5", option5)
+      var typed3 = new Typed(".text5", option5)
     }
 }
 
 var option5 = {
-    strings: ["<br><br>$ ^200 Error message: ^300 <br><br>$ ^200 Segmentation fault (core dumped) ^300 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200"],
+    strings: ["<br><br>$ ^200 Or contact me at"],
     typeSpeed: 10,
     onComplete: function () {
       document.querySelectorAll(".typed-cursor")[4].style.display = "none";
@@ -44,6 +44,24 @@ var option5 = {
 }
 
 var option6 = {
+    strings: ["edward98c@gmail.com ^300"],
+    typeSpeed: 10,
+    onComplete: function () {
+      document.querySelectorAll(".typed-cursor")[5].style.display = "none";
+      var typed4 = new Typed(".text7", option7)
+    }
+}
+
+var option7 = {
+    strings: ["<br><br>$ ^200 Error message: ^300 <br><br>$ ^200 Segmentation fault (core dumped) ^300 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200 .  ^100 <br><br>$ ^200"],
+    typeSpeed: 10,
+    onComplete: function () {
+      document.querySelectorAll(".typed-cursor")[6].style.display = "none";
+      var typed4 = new Typed(".text8", option8)
+    }
+}
+
+var option8 = {
     strings: ["Heap corruption ^200", "Running gdb ^200", "Placing break statements ^200", "Null pointer found ^200", "Refactoring code ^200", "Need more coffee ^200", "Adding more code", "Doing a barrel roll", "More bugs found"],
     typeSpeed: 25,
     backSpeed: 20,
