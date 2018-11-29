@@ -62,7 +62,7 @@ var option7 = {
 }
 
 var option8 = {
-    strings: ["Heap corruption ^200", "Running gdb ^200", "Placing break statements ^200", "Null pointer found ^200", "Refactoring code ^200", "Need more coffee ^200", "Adding more code", "Doing a barrel roll", "More bugs found"],
+    strings: ["Heap corruption ^300", "Running gdb ^300", "Placing break statements ^300", "Null pointer found ^300", "Refactoring code ^300", "Need more coffee ^300", "Adding more code ^300", "Doing a barrel roll ^300", "More bugs found ^300"],
     typeSpeed: 25,
     backSpeed: 20,
     smartBackspace: true, // this is a default
