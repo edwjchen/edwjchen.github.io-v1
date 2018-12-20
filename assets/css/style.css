@@ -260,8 +260,8 @@ li  {
 
 .featured {
     font-size: 24px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 120px;
 }
 
 .feat_pic {
@@ -271,6 +271,63 @@ li  {
 .feat_pic_right {
     box-shadow: 8px 8px 22px 2px rgba(0,0,0,0.6);
     margin-left: 350px;
+}
+
+
+.feat_container {
+  position: relative;
+  width: 58.75%;
+  height: auto;
+}
+
+.blue_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  right: 0;
+  top:-0.5px;
+  background-color: #6699cc;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 295px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0.7;
+}
+
+.white_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top:-0.5px;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 295px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0.5;
+}
+
+.feat_container:hover .blue_overlay {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.feat_container:hover .white_overlay {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
 }
 
 .right_rect {
