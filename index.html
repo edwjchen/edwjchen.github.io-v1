@@ -67,7 +67,7 @@
 		<span class="section_title" id="about_title"> About Me </span>
 		<div id="intro_text"> 
 			Hey, <span style="color:#6699cc">what's poppin'</span>? I'm an undergraduate student at <span style="color:#6699cc">University of California, San Diego</span>, majoring in <span style="color:#6699cc">Computer Science</span>. In my free time, I like tinkering with unique projects using a wide variety of APIs. Aside from coding I enjoy 
-			<span style="color:#6699cc">break dancing</span>, <span style="color:#6699cc"> going to the beach</span>, and <span style="color:#6699cc">getting KBBQ</span> with friends.
+			<span style="color:#6699cc">break dancing</span>, <span style="color:#6699cc"> going to the beach</span>, and <span style="color:#6699cc">getting boba</span> with friends.
 			<br/> 
 			<br/>
 			Here's a few things I'm experienced with:
@@ -98,21 +98,57 @@
 	<div class="section">
 		<span class="section_num"> 02. </span>
 		<span class="section_title" id="project_title"> Projects </span>
+
 		<div class="featured"> 
-			Now This Is Podcasting 
-			<img src='assets/img/podcast.jpg' width="300" height="300" >
+			<svg class="right_rect" width="1000" height="400">
+			  <rect x="400" y="75" width="450" height="150"/>
+			</svg>
+			<img class="feat_pic" src='assets/img/blueprint.png' width="500" height="285" onclick="location.href='http://cse110.blueprint.s3-website.us-east-2.amazonaws.com/';" style="cursor: pointer;">
 		</div>
+
 		<div class="featured"> 
-			Simply Snap 
-			<img src='assets/img/snap.jpg' width="300" height="300" >
+			<svg class="left_rect" width="1000" height="400">
+			  <rect x="0" y="75" width="450" height="150"/>
+			</svg>
+			<img class="feat_pic_right" src='assets/img/focus.png' width="500" height="285" onclick="location.href='https://threestripes.herokuapp.com/';" style="cursor: pointer;">
 		</div>
+
 		<div class="featured"> 
-			Cogs 108 Final Project 
-			<img src='assets/img/cogs108.png' width="300" height="300" >
+			<svg class="right_rect" width="1000" height="400">
+			  <rect x="400" y="75" width="450" height="150"/>
+			</svg>
+			<img class="feat_pic" src='assets/img/cogs108.jpg' width="500" height="285" onclick="location.href='https://github.com/Sleightly/COGS108-StackOverflow-Data-Science-Project';" style="cursor: pointer;">
 		</div>
-		<br>
+		
 		<div class = "project-container">
-			<div class="project">
+			<div class="project" onclick="location.href='https://github.com/mrchan64/PodcastNotes';" style="cursor: pointer;">
+				<div class="project_title"> Now This Is Podcasting </div>
+				<div class="project_content"> Podcast and Audio Transcription Platform </div>
+				<i class="fas fa-microphone project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Natual Language Processing </div>
+					<div class="tag"> Google Cloud Audio </div>
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> Javascript </div>
+					<div class="tag"> Node.js </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/wongkatew/three-fourths-pi';" style="cursor: pointer;">
+				<div class="project_title"> Simply Snap </div>
+				<div class="project_content"> Photo-based Automated Note-Taking </div>
+				<i class="fas fa-camera-retro project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Google Cloud Vision</div>
+					<div class="tag"> Java </div>
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> Javascript </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/ZergRush';" style="cursor: pointer;">
 				<div class="project_title"> Zerg Rush </div>
 				<div class="project_content"> Decision-based AI to play StarCraft 2 </div>
 				<!-- <a href="https://github.com/Sleightly/aMaze" class="fab fa-github"></a> -->
@@ -123,8 +159,7 @@
 					<div class="tag"> python-sc2 </div>
 				</div>
 			</div>
-
-			<div class="project">
+			<div class="project" onclick="location.href='https://github.com/Sleightly/aMaze';" style="cursor: pointer;">
 				<div class="project_title"> aMaze </div>
 				<div class="project_content"> Maze Generation and Solving Visualization </div>
 				<!-- <a href="https://github.com/Sleightly/aMaze" class="fab fa-github"></a> -->
@@ -133,7 +168,7 @@
 					<div class="tag"> Java </div>
 				</div>
 			</div>
-			<div class="project">
+			<div class="project" onclick="location.href='https://github.com/Sleightly/GetInLine';" style="cursor: pointer;">
 				<div class="project_title"> Align a Line </div>
 				<div class="project_content"> Detecting speed of a line based on video intelligence  </div>
 				<!-- <a href="https://github.com/Sleightly/GetInLine" class="fab fa-github"></a> -->
@@ -147,7 +182,7 @@
 					<div class="tag"> JavaScript </div>
 				</div>
 			</div>
-			<div class="project">
+			<div class="project" onclick="location.href='https://github.com/Sleightly/DoctorAlexa';" style="cursor: pointer;">
 				<div class="project_title"> Doctor Alexa </div>
 				<div class="project_content"> Alexa skill built to help patients track perscriptions and promote healthy behaviors </div>
 				<!-- <a href="https://github.com/Sleightly/DoctorAlexa" class="fab fa-github"></a> -->
@@ -158,7 +193,7 @@
 					<div class="tag"> AWS Lambda </div>
 				</div>
 			</div>
-			<div class="project"> 
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Lagrange';" style="cursor: pointer;">
 				<div class="project_title"> Exploring Lagrange</div>
 				<div class="project_content"> Using a Lagrange multiplier to solve complex scheduling problems </div>
 				<!-- <a href="https://github.com/Sleightly/Lagrange" class="fab fa-github"></a> -->
@@ -167,7 +202,7 @@
 					<div class="tag"> Python </div>
 				</div>
 			</div>
-			<div class="project">
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Leap';" style="cursor: pointer;">
 				<div class="project_title"> Leap Motion Mouse </div>
 				<div class="project_content"> Creating a working mouse using hand gestures and Leap Motion API </div>
 				<!-- <a href="https://github.com/Sleightly/Leap" class="fab fa-github"></a> -->
@@ -177,7 +212,7 @@
 					<div class="tag"> Leap SDK </div>
 				</div>
 			</div>
-			<div class="project"> 
+			<div class="project" onclick="location.href='https://github.com/Sleightly/TEAM-ME';" style="cursor: pointer;">
 				<div class="project_title"> Colored Bars & Toy Cars  </div>
 				<div class="project_content"> Data visualiztion tool for AT&T Smart City API</div>
 				<!-- <a href="https://github.com/Sleightly/TEAM-ME" class="fab fa-github"></a> -->
@@ -189,7 +224,7 @@
 					<div class="tag"> JQuery </div>
 				</div>
 			</div>
-			<div class="project"> 
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Twitter-Test-Data-Science';" style="cursor: pointer;">
 				<div class="project_title"> Exploring Twitter Tweets  </div>
 				<div class="project_content"> Using Tweepy to collect Twitter data regarding presidential elections </div>
 				<!-- <a href="https://github.com/Sleightly/Twitter-Test-Data-Science" class="fab fa-github"></a> -->
