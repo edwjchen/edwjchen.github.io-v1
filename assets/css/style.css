@@ -275,20 +275,18 @@ li  {
 
 .right_rect {
     position: absolute;
-    fill:black;
-    stroke:#6699cc;
-    stroke-width:5;
-    fill-opacity:0.4;
-    stroke-opacity:0.9;
+    fill:white;
+    fill-opacity:0.9;
+    -webkit-filter: drop-shadow( 5px 5px 5px #000 ); 
+            filter: drop-shadow( 5px 5px 5px #000 );
 }
 
 .left_rect {
     position: absolute;
-    fill:blue;
-    stroke:pink;
-    stroke-width:5;
-    fill-opacity:0.1;
-    stroke-opacity:0.9;
+    fill:white;
+    fill-opacity:0.9;
+    -webkit-filter: drop-shadow( -5px 5px 5px #000 ); 
+            filter: drop-shadow( -5px 5px 5px #000 );
 }
 
 .project-container {
