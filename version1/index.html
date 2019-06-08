@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Edward Chen | Software Engineer</title>
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href='assets/css/style.css' rel='stylesheet'>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130097164-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130097164-1');
+</script>
+
+</head>
+<body>
+	<div id="navbar">
+		<a> 
+			<span id="nav_contact">
+				<span id="navbar_number">04.</span> 
+				Contact 
+			</span>
+		</a>
+		<a> 
+			<span id="nav_exp">
+				<span id="navbar_number">03.</span> 
+				Experience
+			</span>
+		</a>
+		<a> 
+			<span id="nav_projects">
+				<span id="navbar_number">02.</span> 
+				Projects 
+			</span>
+		</a>
+		<a> 
+			<span id="nav_about">
+				<span id="navbar_number">01.</span> 
+				About 
+			</span>
+		</a>
+	</div>
+	<img src='assets/img/logo.png' id='logo'>
+
+	<div class="terminal">
+		<div class="fakeMenu"></div>
+		<div class="fakeScreen">
+		  <div class="text"></div>
+		  <div class="text2" id="underline" onclick="about()"></div>
+		  <div class="text3"></div>
+		  <div class="text4" id="below"></div>
+		  <div class="text5"></div>
+		  <div class="text6" id="underline" href="mailto:edward98c@gmail.com"></div>
+		  <div class="text7"></div>
+		  <div class="text8"></div>
+		</div>
+	</div>
+
+	<div class="section">
+		<span class="section_num"> 01. </span>
+		<span class="section_title" id="about_title"> About Me </span>
+		<div id="intro_text"> 
+			Hey, <span style="color:#6699cc">what's poppin'</span>? I'm an undergraduate student at <span style="color:#6699cc">University of California, San Diego</span>, majoring in <span style="color:#6699cc">Computer Science</span>. In my free time, I like tinkering with unique projects using a wide variety of APIs. Aside from coding I enjoy 
+			<span style="color:#6699cc">break dancing</span>, <span style="color:#6699cc"> going to the beach</span>, and <span style="color:#6699cc">getting boba</span> with friends.
+			<br/> 
+			<br/>
+			Here's a few things I'm experienced with:
+			<div class="double">
+				<ul>
+					<li>Java</li>
+					<li>C++</li>
+					<li>JavaScript</li>
+					<li>Scala</li>
+					<li>PySpark/SQL</li>
+					<li>HTML5</li>
+
+					<li>Python</li>
+					<li>C</li>
+					<li>Node.js</li>
+					<li>OCaml</li>
+					<li>Databases</li>
+					<li>CSS3</li>
+				</ul>
+			</div>
+
+			<div class="profile_pic">
+				<img src='assets/img/profile_pic_2_edit.jpg' id='profile'  width="300" height="300" >
+			</div>
+		</div>
+	</div>
+	
+	<div class="section">
+		<span class="section_num"> 02. </span>
+		<span class="section_title" id="project_title"> Projects </span>
+
+		<div class="featured"> 
+			<div class="feat_text_rcontainer"> 
+				<div class="feat_project"> Featured Project </div>
+				<div class="feat_title"> blueprint </div>
+				<pre class="feat_lang">Python  OpenCV  Tensorflow  AWS  React</pre>
+				<!--a href="https://github.com/Sleightly/aMaze" class="fab fa-github" style="padding-left: 70%"></a-->
+			</div>
+			<svg class="right_rect" width="1000" height="400">
+				<g>
+			  		<rect x="450" y="90" rx="8" ry="8" width="400" height="100"/>
+			  		<text x="475" y="120" font-family="Verdana" font-size="16" fill="black"> 
+			  			Web application that transforms a paper 
+			  			<tspan x="475" y="145"> prototype into a working HTML file using </tspan>
+			  			<tspan x="475" y="170"> computer vision and image classification. </tspan>
+			  		</text>
+			  	</g>
+			</svg>
+
+			<!--div class="feat_container"-->
+				<img class="feat_pic" src='assets/img/blueprint.png' width="55%" height="100%" onclick="location.href='http://cse110.blueprint.s3-website.us-east-2.amazonaws.com/';" style="cursor: pointer;border:5px solid white">
+				<!--div class="white_overlay"></div>
+			</div-->
+		</div>
+
+		<div class="featured"> 
+			<div class="feat_text_lcontainer"> 
+				<div class="feat_project"> Featured Project </div>
+				<div class="feat_title" style="font-size:112%"> Focus </div>
+				<pre class="feat_lang"> Node.js  PostgreSQL  Heroku  Javascript</pre>
+
+			</div>
+			<svg class="left_rect" width="1000" height="400">
+				<g>
+			  		<rect x="0" y="90" rx="8" ry="8" width="400" height="100"/>
+			  		<text x="25" y="120" font-family="Verdana" font-size="16" fill="black"> 
+			  			Timer application that gamifies focus 
+			  			<tspan x="25" y="145"> sessions and allows a user to exchange </tspan>
+			  			<tspan x="25" y="170"> points for different themes and items</tspan>
+			  		</text>
+			  	</g>
+			</svg>
+
+			<!--div class="feat_container"-->
+				<img class="feat_pic_right" src='assets/img/focus.jpg' width="55%" height="100%" onclick="location.href='https://threestripes.herokuapp.com/';" style="cursor: pointer;border:5px solid #6699cc">
+				<!--div class="blue_overlay"></div>
+			</div-->
+		</div>
+
+		<div class="featured"> 
+			<div class="feat_text_rcontainer"> 
+				<div class="feat_project"> Featured Project </div>
+				<div class="feat_title" style="font-size:112%"> Data Science Final Project </div>
+				<pre class="feat_lang">Jupyter Notebook  Python  NLP  TF-IDF</pre>
+			</div>
+			<svg class="right_rect" width="1000" height="400">
+				<g>
+			  		<rect x="450" y="90" rx="8" ry="8" width="400" height="100"/>
+			  		<text x="475" y="120" font-family="Verdana" font-size="16" fill="black"> 
+			  			Data project focused on cleaning and  
+			  			<tspan x="475" y="145"> parsing Stack Overflow and Piazza posts </tspan>
+			  			<tspan x="475" y="170"> regarding introductory Python questions. </tspan>
+			  		</text>
+			  	</g>
+			</svg>
+
+			<!--div class="feat_container"-->
+				<img class="feat_pic" src='assets/img/cogs108.jpg' width="55%" height="100%" onclick="location.href='https://github.com/Sleightly/COGS108-StackOverflow-Data-Science-Project';" style="cursor: pointer;border:5px solid #6699cc">
+				<!--div class="white_overlay"></div>
+			</div-->
+		</div>
+
+		<span class="section_title" id="project_title"> More Projects </span>
+		<br>
+		<div class = "project-container">
+			<div class="project" onclick="location.href='https://github.com/mrchan64/PodcastNotes';" style="cursor: pointer;">
+				<div class="project_title"> Now This Is Podcasting </div>
+				<div class="project_content"> Podcast and Audio Transcription Platform </div>
+				<i class="fas fa-microphone project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Natual Language Processing </div>
+					<div class="tag"> Google Cloud Audio </div>
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> Javascript </div>
+					<div class="tag"> Node.js </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/wongkatew/three-fourths-pi';" style="cursor: pointer;">
+				<div class="project_title"> Simply Snap </div>
+				<div class="project_content"> Photo-based Automated Note-Taking </div>
+				<i class="fas fa-camera-retro project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Google Cloud Vision</div>
+					<div class="tag"> Java </div>
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> Javascript </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/ZergRush';" style="cursor: pointer;">
+				<div class="project_title"> Zerg Rush </div>
+				<div class="project_content"> Decision-based AI to play StarCraft 2 </div>
+				<!-- <a href="https://github.com/Sleightly/aMaze" class="fab fa-github"></a> -->
+				<i class="fas fa-keyboard project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> OpenCV </div>
+					<div class="tag"> python-sc2 </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/aMaze';" style="cursor: pointer;">
+				<div class="project_title"> aMaze </div>
+				<div class="project_content"> Maze Generation and Solving Visualization </div>
+				<!-- <a href="https://github.com/Sleightly/aMaze" class="fab fa-github"></a> -->
+				<i class="fas fa-draw-polygon project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Java </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/GetInLine';" style="cursor: pointer;">
+				<div class="project_title"> Align a Line </div>
+				<div class="project_content"> Detecting speed of a line based on video intelligence  </div>
+				<!-- <a href="https://github.com/Sleightly/GetInLine" class="fab fa-github"></a> -->
+				<i class="fas fa-user-clock project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> OpenCV </div>
+					<div class="tag"> Google Cloud Vision API </div>
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> JavaScript </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/DoctorAlexa';" style="cursor: pointer;">
+				<div class="project_title"> Doctor Alexa </div>
+				<div class="project_content"> Alexa skill built to help patients track perscriptions and promote healthy behaviors </div>
+				<!-- <a href="https://github.com/Sleightly/DoctorAlexa" class="fab fa-github"></a> -->
+				<i class="fas fa-user-md project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Alexa Developer Toolkit </div>
+					<div class="tag"> AWS Lambda </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Lagrange';" style="cursor: pointer;">
+				<div class="project_title"> Exploring Lagrange</div>
+				<div class="project_content"> Using a Lagrange multiplier to solve complex scheduling problems </div>
+				<!-- <a href="https://github.com/Sleightly/Lagrange" class="fab fa-github"></a> -->
+				<i class="far fa-calendar-alt project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Leap';" style="cursor: pointer;">
+				<div class="project_title"> Leap Motion Mouse </div>
+				<div class="project_content"> Creating a working mouse using hand gestures and Leap Motion API </div>
+				<!-- <a href="https://github.com/Sleightly/Leap" class="fab fa-github"></a> -->
+				<i class="fas fa-mouse-pointer project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+					<div class="tag"> Leap SDK </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/TEAM-ME';" style="cursor: pointer;">
+				<div class="project_title"> Colored Bars & Toy Cars  </div>
+				<div class="project_content"> Data visualiztion tool for AT&T Smart City API</div>
+				<!-- <a href="https://github.com/Sleightly/TEAM-ME" class="fab fa-github"></a> -->
+				<i class="far fa-chart-bar project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> HTML </div>
+					<div class="tag"> CSS </div>
+					<div class="tag"> JavaScript </div>
+					<div class="tag"> JQuery </div>
+				</div>
+			</div>
+			<div class="project" onclick="location.href='https://github.com/Sleightly/Twitter-Test-Data-Science';" style="cursor: pointer;">
+				<div class="project_title"> Exploring Twitter Tweets  </div>
+				<div class="project_content"> Using Tweepy to collect Twitter data regarding presidential elections </div>
+				<!-- <a href="https://github.com/Sleightly/Twitter-Test-Data-Science" class="fab fa-github"></a> -->
+				<i class="fab fa-twitter project_icon"></i>
+				<div class="list_tags"> 
+					<div class="tag"> Python </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="section">
+		<span class="section_num"> 03. </span>
+		<span class="section_title" id="exp_title"> Experience </span>
+		<div id="exp">
+			<span class="position">Data Engineering Intern </span> <span class="company_name"> - Rally Health </span>
+			<div class="time"> Jun - Sep 2018 </div>
+			<div class="company_desc">
+				<ol>
+					<li>Interned on the data reporting team, which analyzed company and user metrics data to help make informed business decisions. 
+					</li>
+					<li>Worked on extracting, transforming, and loading a newly created dataset and helped create multiple autonomous scripts to enhance parts of the current workflow. 
+					</li>
+					<li>Mainly learned how to utilize languages: PySpark, Python, and SQL. Developed backend and frontend skills using Scala and AngularJS during an intern-wide project. 
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div id="exp">
+			<span class="position">Instructional Facilitator </span> <span class="company_name"> - Treobytes</span>
+			<div class="time"> Sep 2017 - Jun 2018 </div>
+			<div class="company_desc">
+				<ol>
+					<li>Over the course of a year, taught K-12 students in underprivileged areas skills in beginner coding languages and other software technologies, such as 3D modeling in TinkerCAD or completing a challenge game in Scratch. 
+					</li>
+					<li>Helped empower these students with creative problem solving skills and an introduction to an uncommon technical field. 
+					</li>
+					<li>Learned valuable speaking skills as well as how to properly convey high level topics in a simple and concise way such that a 2nd to 8th grader would understand. 
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<span class="section_num"> 04. </span>
+		<span class="section_title" id="contact_title"> Get in Touch </span>
+		<div class="contact_text">
+			Whether it be learning something new or a potential project, I'd love to hear what you have to say. Feel free to email me or send me a message via Linkedin.  
+		</div> 
+		<div class="icons">
+			<a href="https://www.linkedin.com/in/edward-chen-54a2b9168/"><i class="fab fa-linkedin contact_icon"></i></a>
+			<a href="https://www.facebook.com/flylikeHM02"><i class="fab fa-facebook-square contact_icon"></i></a>
+			<a href="https://www.github.com/Sleightly"><i class="fab fa-github-square contact_icon"></i></a>
+			<a href="mailto:edward98c@gmail.com"><i class="fas fa-envelope-square contact_icon"></i></a>
+		</div>
+	</div>
+	<script>
+		function about() {
+		  var element = document.getElementById('about_title')
+		  var offset = 45;
+		  var bodyRect = document.body.getBoundingClientRect().top;
+		  var elementRect = element.getBoundingClientRect().top;
+		  var elementPosition = elementRect - bodyRect;
+		  var offsetPosition = elementPosition - offset;
+
+		  window.scrollTo({
+		       top: offsetPosition,
+		       behavior: "smooth"
+		  });
+		}
+	</script>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script type="module" src="assets/js/index.js"></script>
+</html>
