@@ -1,0 +1,10 @@
+:root {
+    --main-color: rgb(0,71,170); 
+    --top-nav-space: 100px;
+    --nav-space: 60px;
+    --sidebar-width: 24%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
