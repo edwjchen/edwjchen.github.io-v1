@@ -1,0 +1,17 @@
+:root {
+    --main-color: rgb(0,71,170); 
+    --top-nav-space: 100px;
+    --nav-space: 60px;
+    --sidebar-width: 24%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+  margin-left: var(--sidebar-width); /* Same as the width of the sidenav */
+  font-size: 20px;
+  padding: 40px 60px;
+}
+

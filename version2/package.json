@@ -1,0 +1,23 @@
+{
+  "name": "sleightly.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typed.js": "^2.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sleightly/Sleightly.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sleightly/Sleightly.github.io/issues"
+  },
+  "homepage": "https://github.com/Sleightly/Sleightly.github.io#readme"
+}

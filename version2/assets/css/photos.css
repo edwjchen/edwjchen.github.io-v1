@@ -1,0 +1,44 @@
+:root {
+    --main-color: rgb(0,71,170); 
+    --top-nav-space: 100px;
+    --nav-space: 60px;
+    --sidebar-width: 24%;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #EEEEEE;
+}
+
+.main {
+  margin-left: var(--sidebar-width); /* Same as the width of the sidenav */
+  font-size: 20px;
+  padding: 40px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.polaroid-left {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.polaroid-right {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}

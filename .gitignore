@@ -1,6 +1,9 @@
 node_modules
 package-lock.json
-
+version1/node_modules
+version2/node_modules
+version1/package-lock.json
+version2/package-lock.json
 
 
 
