@@ -2475,7 +2475,7 @@ input, select, textarea {
 			cursor: default;
 			display: inline-block;
 			height: 6em;
-			line-height: 5.65em;
+			line-height: 6.75em;
 			margin: 0 0 2em 0;
 			text-align: center;
 			width: 6em;
@@ -3060,7 +3060,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
+			/*background-image: url("images/overlay.png");*/
 			content: '';
 			display: block;
 			height: 100%;
@@ -3152,6 +3152,14 @@ input, select, textarea {
 
 		.spotlight.style3 .content {
 			border-color: #39c088;
+		}
+
+		.spotlight.style4 .content {
+			border-color: #f1c554;
+		}
+
+		.spotlight.style5.content {
+			border-color: #9bb5f7;
 		}
 
 		.spotlight.inactive .content {
@@ -4118,14 +4126,14 @@ input, select, textarea {
 
 	}
 
-.fade {
+.fades {
 	opacity: 0;
 	transition: opacity 1s;
 	transform: translate(0, 20px); 
 	transition: all 1.5s;
 }
 
-.fade.visible { 
+.fades.visible { 
 	opacity: 1;
 	transform: translate(0, 0);
 }
