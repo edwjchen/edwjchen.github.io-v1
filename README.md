@@ -1,5 +1,8 @@
 ## Personal Website
 
+I wanted to create a site to just dump all of my photography on a showcase some of the projects I've been working on. 
+
+
 
 ## Big thanks to HTML5 UP for the template
 Landed by HTML5 UP
