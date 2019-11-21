@@ -4137,3 +4137,7 @@ input, select, textarea {
 	opacity: 1;
 	transform: translate(0, 0);
 }
+
+.page {
+	margin-top: 7em;
+}
