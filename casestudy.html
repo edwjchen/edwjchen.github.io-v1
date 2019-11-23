@@ -28,7 +28,7 @@
 					<div id="main" class="wrapper style1">
 						<div class="container">
 							<header class="major" style="margin-bottom: 2em;">
-								<h2>Case Study</h2>
+								<h2>case study</h2>
 							</header>
 
 							<!-- Content -->
@@ -37,7 +37,7 @@
 									<div class="col-2 col-12-medium">
 									</div>
 									<div class="col-8 col-12-medium">
-										<header style="text-align:center;">
+										<header style="text-align:center;margin-bottom: 2em; ">
 											<h2>LinkedIn: Event Groups</h2>
 											<p></p>
 											<p>Efficiently coordinating LinkedIn members who are attending the same events.</p>
@@ -61,9 +61,13 @@
 								</div>
 							</section>
 						</div>
+
+
 						<section class="spotlight style1 bottom">
-							<span class="image fit main" id="fancy-image"><img src="images/fancyphoto4.png" alt="" onload="window.scrollTo(0,document.body.scrollHeight);window.scrollTo(0,0);" /></span>
+							<span class="image fit main" id="fancy-image"><img src="images/fancyphoto4.png" alt="" onload="setTimeout(()=>{window.scrollTo(0,document.body.scrollHeight);window.scrollTo(0,0);},500)" /></span>
 						</section>
+
+						<!-- <span class="image fit main" id="fancy-image"><div class="parallax-window" data-parallax="scroll" data-image-src="images/fancyphoto4.png" style="height: 600px"></div></span> -->
 
 						<div class="container">
 							<div class="row gtr-150">
@@ -175,12 +179,14 @@
 								<div class="col-2 col-12-medium">
 								</div>
 									<div class="col-8 col-12-medium fades">
-										<span class="image fit" id="fancy-image"><img src="images/chart1.png" alt="" /></span>
-
+										<header>
+											<h2></h2>
+											<p>When going to a new professional event or conference, what percentage of your efforts are aimed towards re-connecting with friends/connections at that conference?</p>
+										</header>
+										<span class="image fit" id="fancy-image"><img src="images/chart3.svg" alt="" /></span>
 									</div>
 								<div class="col-2 col-12-medium">
 								</div>
-
 
 								<div class="col-2 col-12-medium">
 								</div>
@@ -190,10 +196,15 @@
 								<div class="col-2 col-12-medium">
 								</div>
 
+
 								<div class="col-2 col-12-medium">
 								</div>
 									<div class="col-8 col-12-medium fades">
-										<span class="image fit" id="fancy-image"><img src="images/chart2.png" alt="" /></span>
+										<header>
+											<h2></h2>
+											<p>When going to a new professional event or conference, what percentage of your efforts are aimed towards meeting new people?</p>
+										</header>
+										<span class="image fit" id="fancy-image"><img src="images/chart4.svg" alt="" /></span>
 									</div>
 								<div class="col-2 col-12-medium">
 								</div>
@@ -527,6 +538,7 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/parallax.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
