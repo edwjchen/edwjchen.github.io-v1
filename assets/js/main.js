@@ -19,9 +19,11 @@
 		});
 
 	// Play initial animations on page load.
-	window.setTimeout(function() {
-		$body.removeClass('is-preload');
-	}, 100);
+	$(document).ready(function() {
+		window.setTimeout(function() {
+			$body.removeClass('is-preload');
+		}, 100);
+	});
 
 	// Touch mode.
 		if (browser.mobile)
