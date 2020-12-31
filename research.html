@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Research</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload landing">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index.html">[ e , j , c ]</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="photos.html">Photos</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Research</h2>
+					</header>
+
+					<!-- Content -->
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<!-- Sidebar -->
+							<section id="sidebar">
+								<header>
+									<h2>Empirical Study of Browser Bugs</h2>
+									<p>PlSysSec - Work in Progress</p>
+								</header>
+								<p>Edward Chen, Evan Laufer, Fraser Brown, Stefan Savage, Deian Stefan</p>
+								<p>Characterizing and measuring browser bugs and vulnerabilities across time, bug
+									type, authorship, code density, and reporting methods in Firefox, Chromium, and
+									Webkit.
+								</p>
+								<p>
+									Planning paper submission to ACM CCS 2021.
+								</p>
+								<ul class="icons">
+									<li><a href="https://github.com/edwjchen/breezy" class="icon brands alt fa-github"
+											target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<!-- Content -->
+							<section id="content">
+								<span class="image fit" id="fancy-image"><img src="images/pic03.jpg" alt="" /></span>
+							</section>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row gtr-150">
+						<div class="col-5 col-12-medium">
+							<!-- Sidebar -->
+							<section id="sidebar" class="fades">
+								<header>
+									<h2>p2p.io - the more the merrier</h2>
+									<p>CSE 223b - Distributed Systems</p>
+								</header>
+								<p>Edward Chen, Godwin Pang, Frank Wang</p>
+								<p> In this paper, we explore the efficiency benefits as well as a
+									cost analysis of a p2p architecture compared to
+									the traditional client-server architecture.
+									For our project, we successfully recreated an Agar.io style
+									game and test both architectures on 10, 30, and 60 t2.micro
+									Amazon EC2 nodes. Our results indicate that the performance of the p2p system
+									scales better than the client-server
+									architecture. To our surprise, even on small scale systems
+									with less than 20 nodes, the p2p architecture is still as performant.
+								</p>
+								<ul class="icons fades">
+									<li><a href="papers/p2p.pdf" class="icon alt fa-file" target="_blank"><span
+												class="label">Paper</span></a></li>
+									<li><a href="https://github.com/edwjchen/agario" class="icon brands alt fa-github"
+											target="_blank"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-7 col-12-medium imp-medium">
+							<!-- Content -->
+							<section id="content">
+								<span class="image fit fades" id="fancy-image"><img
+										src="images/research/agario_grid.png" alt="" /></span>
+							</section>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row gtr-150">
+						<div class="col-5 col-12-medium">
+							<!-- Sidebar -->
+							<section id="sidebar" class="fades">
+								<header>
+									<h2>The Bug That Cried Wolf</h2>
+									<p>CSE 227 - Computer Security</p>
+								</header>
+								<p>Edward Chen, Arvind Saripalli, Shun-Wen Yu</p>
+								<p>With the prevalent use of static analysis checkers and the rise of
+									new tools of this kind comes a necessity to ensure the effectiveness
+									and reliability of these tools. In order to accomplish this task, we
+									developed a framework, Breezy, which allows automated bug tracking from the
+									inception to the resolution of a bug within any given Github repository.
+									Our analysis indicates we are able to successfully track a
+									bug’s lifespan, depending on the effectiveness of the static analysis tool.</p>
+								<ul class="icons fades">
+									<li><a href="papers/Breezy.pdf" class="icon alt fa-file" target="_blank"><span
+												class="label">Paper</span></a></li>
+									<li><a href="papers/Breezy_Presentation.pdf" class="icon alt fa-file-powerpoint"
+											target="_blank"><span class="label">Slides</span></a></li>
+									<li><a href="https://github.com/edwjchen/archive_breezy"
+											class="icon brands alt fa-github" target="_blank"><span
+												class="label">GitHub</span></a></li>
+
+								</ul>
+							</section>
+						</div>
+						<div class="col-7 col-12-medium imp-medium">
+							<!-- Content -->
+							<section id="content">
+								<span class="image fit fades" id="fancy-image"><img src="images/research/breezy.png"
+										alt="" /></span>
+							</section>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="row gtr-150">
+						<div class="col-5 col-12-medium">
+							<!-- Sidebar -->
+							<section id="sidebar" class="fades">
+								<header>
+									<h2>Benchmarking the Nintendo Switch</h2>
+									<p>CSE 221 - Operating Systems</p>
+									<p>Edward Chen, Evan Laufer, Miranda Go</p>
+									<p>In this paper, we explore different benchmarking methods and results for
+										Atmosphere, a modified version of Horizon OS, the operating system that runs
+										on the Nintendo Switch. All benchmarking code was written in C++ and
+										compiled using gcc 9.2.0 without optimizations. In order
+										to access the Atmosphere system API, we used the libnx library with
+										devkitpro v3.0.3. </p>
+									<p> There were several challenges posed when trying to
+										benchmark the Switch. First, the default operating system,
+										Horizon OS, installed on the Switch does not allow arbitrary
+										code execution, necessitating the use of Atmosphere to let
+										us run code. Second, the system API is not very well documented, making
+										writing and debugging certain programs
+										difficult. Third, the operating system has some key differences to the
+										monolithic kernels we are familiar with, making
+										certain benchmarks difficult or impossible. </p>
+								</header>
+								<ul class="icons fades">
+									<li><a href="papers/Switch.pdf" class="icon alt fa-file" target="_blank"><span
+												class="label">Paper</span></a></li>
+									<li><a href="https://github.com/edwjchen/BenchmarkSwitch"
+											class="icon brands alt fa-github" target="_blank"><span
+												class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-7 col-12-medium imp-medium fades">
+							<!-- Content -->
+							<section id="content">
+								<span class="image fit fades" id="fancy-image"><img src="images/research/bluescreen.jpg"
+										alt="" /></span>
+							</section>
+						</div>
+					</div>
+
+
+					<div class="copyright" style="text-align: center;">
+						&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/fade.js"></script>
+</body>
+
+</html>
