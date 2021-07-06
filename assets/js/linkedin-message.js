@@ -116,7 +116,7 @@ function check(ans, checkAns) {
     if (ans === "send a linked[in] message") {    	
         $("#anscheck").css("color", "#0072b1") 
         $(".selected").addClass("correct");
-        inputColor()
+        $("#ans").css("border-color", "#0072b1")
         return true
     }
     $("#anscheck").css("color", "#e44c65")
@@ -193,15 +193,18 @@ $(function() {
         $(this).css("text-decoration", "underline") 
         setup($(this).text())
         $('#ans').val("")
-        inputColor()
         reset()
     }) 
  }) 
 
-function inputColor() {
+
+$("#ans").focus(function(){
     if ($('.selected').hasClass("correct")) {
         $("#ans").css("border-color", "#0072b1")
     } else {
         $("#ans").css("border-color", "#e44c65")
     }
-}
+});
+$("#ans").blur(function(){
+    $("#ans").css("border-color", "rgba(255, 255, 255, 0.5)")
+});
