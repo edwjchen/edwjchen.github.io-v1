@@ -21,23 +21,11 @@ function setup(question) {
         case "Venice":
             $("#que").text("venice")
             break
-        case "Hercules":
-            $("#que").text("hercules")
-            break
-        case "LIquid":
+        case "Liquid":
             $("#que").text("liquid")
             break
         case "Nuage":
             $("#que").text("nuage")
-            break
-        case "Zookeeper":
-            $("#que").text("zookeeper")
-            break
-        case "Flink":
-            $("#que").text("flink")
-            break
-        case "Beam":
-            $("#que").text("beam")
             break
         case "Gobblin":
             $("#que").text("gobblin")
@@ -52,55 +40,192 @@ function send(ans) {
 }
 
 function kafka(ans) {
-    return ans
+    res = []
+    words = ans.split(" ")
+    words.forEach((word) => {
+        if (word.startsWith("ka") && word.endsWith("ka")) {
+            res.push(word.slice(2,-2))
+        } else {
+            res.push("f")
+        }
+    })
+    return res.join(" ")
 }
 
 function samza(ans) {
-    return ans
+    res = []
+    words = ans.split(" ")
+    words.forEach((word) => {
+        chars = word.match(/..?/g)
+        newWord = ""
+        chars.forEach((char) => {
+            if (char[0] == char[1]) newWord += char[0]
+        })
+        res.push(newWord)
+    })
+    return res.join(" ")
 }
 
 function brooklin(ans) {
-    return ans
+    res = []
+    words = ans.split(" ")
+    for (var i=0; i < words.length; i++) {
+        if (i >= words.length / 2) {
+            res.push(words[i].split('').reverse().join(''))
+        } else {
+            res.push(words[i])
+        }
+    }
+    return res.join(" ")
 }
 
 function ambry(ans) {
-    return ans
+    emojis = ["👍", "👏", "❤️", "💡", "🤔"]
+    seen = []
+    res = []
+    words = ans.split(" ")
+    for (var i = 0; i < words.length; i++) {
+        word = words[i]
+
+        if (seen.includes(word)) {
+            res.push("seenlinked[in]emoji")
+            continue
+        }
+
+        if (i == 0) {
+            if (emojis.includes(word)) {
+                res.push("send")
+                seen.push(word)
+            } else {
+                res.push("wronglinked[in]emoji")
+            }
+        } else if (i == 1) {
+            if (emojis.includes(word)) {
+                res.push("a")
+                seen.push(word)
+            } else {
+                res.push("wronglinked[in]emoji")
+            }
+        } else if (i == 2) {
+            if (emojis.includes(word)) {
+                res.push("linked[in]")
+                seen.push(word)
+            } else {
+                res.push("wronglinked[in]emoji")
+            }
+        } else {
+            if (emojis.includes(word)) {
+                res.push("message")
+                seen.push(word)
+            } else {
+                res.push("wronglinked[in]emoji")
+            }
+        } 
+    }
+
+    return res.join(" ")
 }
 
 function espresso(ans) {
-    return ans
+    res = []
+    words = ans.split(" ")
+    words.forEach((word) => {
+        pre = word.slice(0, -3)
+        last = word.slice(-1)
+        first = word.slice(-3, -2)
+        second = word.slice(-2, -1)
+        if (first != second) {
+            res.push(pre+last)
+        } else {
+            res.push(pre + first + last)
+        }
+    })
+    return res.join(" ")
 }
 
 function venice(ans) {
-    return ans
-}
-
-function hercules(ans) {
-    return ans
+    res = []
+    words = ans.split(" ")
+    words.forEach((word) => {
+        if (!word.includes(":")) {
+            res.push("missing:")
+        } else if ((word.match(/\:/) || []).length != 1) {
+            res.push("toomany:")
+        } else {
+            kv = word.split(":")
+            k = kv[0]
+            v = kv[1]
+            if (k != v) {
+                res.push("k!=v")
+            } else {
+                res.push(k)
+            }
+        }
+    })
+    return res.join(" ")
 }
 
 function liquid(ans) {
-    return ans
+    chars = ans.split("")
+    res = []
+    cipher = new Date().getHours()
+    chars.forEach((char) => {
+        switch(char) {
+            case " ":
+                res.push(char)
+                break
+            case "]":
+                res.push(char)
+                break
+            case "[":
+                res.push(char)
+                break
+            default:
+                charCode = char.charCodeAt(0)
+                res.push(String.fromCharCode(((charCode + cipher) <= 122) ? charCode + cipher : (charCode + cipher) % 122 + 96))
+                break
+        }
+    })
+    return res.join("")
 }
 
 function nuage(ans) {
-    return ans
-}
-
-function zookeeper(ans) {
-    return ans
-}
-
-function flink(ans) {
-    return ans
-}
-
-function beam(ans) {
+    if (!ans.startsWith("envoyer un")) return "tu parles français?"
+    words = ans.split(" ")
+    if (words.length > 1) {
+        last = words[words.length - 1]
+        slast = words[words.length - 2]
+        words[words.length - 1] = slast
+        words[words.length - 2] = last
+    }
+    ans = words.join(" ")
+    ans = ans.replace("envoyer", "send").replace(" un ", " a ")
     return ans
 }
 
 function gobblin(ans) {
-    return ans
+    res = []
+    chars = ans.split("")
+    chars.forEach((char) => {
+        if (char == "e") res.push("e")
+        res.push(char)
+    })
+
+    ans = res.join("")
+    res = []
+
+    words = ans.split(" ")
+    words.forEach((word) => {
+        matches = word.match(/\[..?\]/g)
+        if (matches != null) {
+            matches.forEach((match) => {
+                newMatch = match.slice(1, -2)
+                word = word.replace(match, newMatch)
+            })
+        }
+        res.push(word)
+    })
+    return res.join(" ")
 }
 
 function reset() {
@@ -113,14 +238,13 @@ function check(ans, checkAns) {
 
     $("#ansbox").text(ans) 
     $("#anscheck").text(checkAns) 
-    if (ans === "send a linked[in] message") {    	
+    if (checkAns === "send a linked[in] message") {    	
         $("#anscheck").css("color", "#0072b1") 
         $(".selected").addClass("correct");
         $("#ans").css("border-color", "#0072b1")
         return true
     }
     $("#anscheck").css("color", "#e44c65")
-    inputColor()
     return false
 }
 
@@ -152,23 +276,11 @@ $(function() {
                 case "Venice":
                     check(ans, venice(ans))
                     break
-                case "Hercules":
-                    check(ans, hercules(ans))
-                    break
-                case "LIquid":
+                case "Liquid":
                     check(ans, liquid(ans))
                     break
                 case "Nuage":
                     check(ans, nuage(ans))
-                    break
-                case "Zookeeper":
-                    check(ans, zookeeper(ans))
-                    break
-                case "Flink":
-                    check(ans, flink(ans))
-                    break
-                case "Beam":
-                    check(ans, beam(ans))
                     break
                 case "Gobblin":
                     check(ans, gobblin(ans))
