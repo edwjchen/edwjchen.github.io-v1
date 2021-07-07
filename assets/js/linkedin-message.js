@@ -1,7 +1,7 @@
 function setup(question) {
     switch (question) {
         case "Send":
-            $("#que").text("send a linked[in] message")
+            $("#que").text("send: a linked[in] message")
             break
         case "Kafka":
             $("#que").text("kafka")
@@ -68,15 +68,15 @@ function samza(ans) {
 
 function brooklin(ans) {
     res = []
-    words = ans.split(" ")
-    for (var i=0; i < words.length; i++) {
-        if (i >= words.length / 2) {
-            res.push(words[i].split('').reverse().join(''))
+    chars = ans.split("")
+    for (var i=0; i < chars.length; i++) {
+        if (i >= chars.length / 2) {
+            res.push(chars[chars.length + (chars.length / 2) - i - 1])
         } else {
-            res.push(words[i])
+            res.push(chars[i])
         }
     }
-    return res.join(" ")
+    return res.join("")
 }
 
 function ambry(ans) {
@@ -190,7 +190,7 @@ function liquid(ans) {
 }
 
 function nuage(ans) {
-    if (!ans.startsWith("envoyer un")) return "tu parles français?"
+    if (!ans.startsWith("un")) return "tu parles français?"
     words = ans.split(" ")
     if (words.length > 1) {
         last = words[words.length - 1]
@@ -199,7 +199,7 @@ function nuage(ans) {
         words[words.length - 2] = last
     }
     ans = words.join(" ")
-    ans = ans.replace("envoyer", "send").replace(" un ", " a ")
+    ans = ans.replace("un ", "a ")
     return ans
 }
 
@@ -238,7 +238,7 @@ function check(ans, checkAns) {
 
     $("#ansbox").text(ans) 
     $("#anscheck").text(checkAns) 
-    if (checkAns === "send a linked[in] message") {    	
+    if (checkAns === "a linked[in] message") {    	
         $("#anscheck").css("color", "#0072b1") 
         $(".selected").addClass("correct");
         $("#ans").css("border-color", "#0072b1")
