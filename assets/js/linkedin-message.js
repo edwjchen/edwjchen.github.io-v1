@@ -168,7 +168,7 @@ function venice(ans) {
 function liquid(ans) {
     chars = ans.split("")
     res = []
-    cipher = new Date().getHours()
+    cipher = new Date().getHours() + 1
     chars.forEach((char) => {
         switch(char) {
             case " ":
