@@ -94,19 +94,12 @@ function ambry(ans) {
 
         if (i == 0) {
             if (emojis.includes(word)) {
-                res.push("send")
-                seen.push(word)
-            } else {
-                res.push("wronglinked[in]emoji")
-            }
-        } else if (i == 1) {
-            if (emojis.includes(word)) {
                 res.push("a")
                 seen.push(word)
             } else {
                 res.push("wronglinked[in]emoji")
             }
-        } else if (i == 2) {
+        } else if (i == 1) {
             if (emojis.includes(word)) {
                 res.push("linked[in]")
                 seen.push(word)
