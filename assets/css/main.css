@@ -4293,7 +4293,7 @@ body.is-touch #banner {
   opacity: 0;
   transition: opacity 1s;
   transform: translate(0, 20px);
-  transition: all 1.5s;
+  transition: all .75s;
 }
 
 .fades.visible {
@@ -4306,11 +4306,11 @@ body.is-touch #banner {
 }
 
 .selected {
-  color:#e44c65;
+  color: #e44c65;
 }
 
 .correct {
-  color:rgb(0, 114, 177) !important;
+  color: rgb(0, 114, 177) !important;
   font-weight: bold;
 }
 
@@ -4319,5 +4319,5 @@ body.is-touch #banner {
 }
 
 .questions {
-  color:rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
