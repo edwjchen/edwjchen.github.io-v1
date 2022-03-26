@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="images/seedling-solid.png" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/val.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload landing">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 id="logo"><a href="index">[ e , j , c ]</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="research">Research</a></li>
+					<li><a href="blog">Blog</a></li>
+					<li><a href="projects">Projects</a></li>
+					<li><a href="photos">Photos</a></li>
+					<li><a href="valroulette">ValRoulette</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div>
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>ValRoulette</h2>
+						<div>Add more strats <a href="https://forms.gle/yVu73RKtMLRPrZDM7" target="_blank">here!</a></div>
+					</header>
+
+					<!-- Content -->
+					<section id="content">
+					<div>
+						<h3> Choose a a side!</h3>
+					</div>
+					<div class="row gtr-150">
+						<div class="col-2 col-12-small imp-small">
+							<div class="valimg" id="side_Any" onclick="addParam('side','Any')">
+								<span class="image fit" id="fancy-image"><img src="images/val/heart.webp" alt="" />Any</span>
+							</div>
+						</div>
+						<div class="col-2 col-12-small imp-small">
+							<div class="valimg" id="side_Attacking" onclick="addParam('side','Attacking')">
+								<span class="image fit" id="fancy-image"><img src="images/val/knife.webp" alt="" />Attacking</span>
+							</div>
+						</div>
+						<div class="col-2 col-12-small imp-small">
+							<div class="valimg" id="side_Defending" onclick="addParam('side','Defending')">
+								<span class="image fit" id="fancy-image"><img src="images/val/shield.webp" alt="" />Defending</span>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<h3> Choose a map!</h3>
+					</div>
+					<div class="row gtr-150">
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Any" onclick="addParam('map','Any')">
+								<span class="image fit" id="fancy-image"><img src="images/val/any.webp" alt="" />Any</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Ascent" onclick="addParam('map','Ascent')">
+								<span class="image fit" id="fancy-image"><img src="images/val/ascent.webp" alt="" />Ascent</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Breeze" onclick="addParam('map','Breeze')">
+								<span class="image fit" id="fancy-image"><img src="images/val/breeze.webp" alt="" />Breeze</span>
+							</div>
+						</div>
+
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Bind" onclick="addParam('map','Bind')">
+								<span class="image fit" id="fancy-image"><img src="images/val/bind.webp" alt="" />Bind</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Fracture" onclick="addParam('map','Fracture')">
+								<span class="image fit" id="fancy-image"><img src="images/val/fracture.webp" alt="" />Fracture</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Haven" onclick="addParam('map','Haven')">
+								<span class="image fit" id="fancy-image"><img src="images/val/haven.webp" alt="" />Haven</span>
+							</div>
+						</div>
+
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Icebox" onclick="addParam('map','Icebox')">
+								<span class="image fit" id="fancy-image"><img src="images/val/icebox.webp" alt="" />Icebox</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Range" onclick="addParam('map','Range')">
+								<span class="image fit" id="fancy-image"><img src="images/val/range.webp" alt="" />Range</span>
+							</div>
+						</div>
+						<div class="col-4 col-12-medium imp-medium">
+							<div class="valimg" id="map_Split" onclick="addParam('map','Split')">
+								<span class="image fit" id="fancy-image"><img src="images/val/split.webp" alt="" />Split</span>
+							</div>
+						</div>
+
+
+					<div>
+						<h3> Choose a strat!</h3>
+						<div id="side_selection">Side: </div>
+						<div id="map_selection">Map: </div>
+						<h3></h3>
+						<h3 href="#" class="button primary" onclick="selectStrat()">Spin!</h3>
+						<h3 id="strat_name"></h3>
+						<h3 id="strat_desc"></h3>
+					</div>
+					</section>
+				</div>
+
+				<hr />
+
+				<div class="copyright" style="text-align: center;">
+					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/fade.js"></script>
+	<script src="assets/js/valroulette.js"></script>
+</body>
+
+</html>

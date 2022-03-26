@@ -1,0 +1,11 @@
+.valimg {
+    opacity: 0.3;
+}
+
+.valimg_ {
+    opacity: 1;
+}
+
+.valimg:hover {
+    opacity: 1;
+}
